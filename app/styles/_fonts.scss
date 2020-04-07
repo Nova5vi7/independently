@@ -1,0 +1,10 @@
+@import "./mixins/_font-face.scss"; // импорт миксина
+
+// @include  - команда использования миксина
+// font-face - название миксина
+// в скобках (название шрифта, путь к шрифту, font-weight)
+@include font-face("Roboto", "../fonts/roboto-regular/Roboto-Regular");
+@include font-face("Roboto", "../fonts/roboto-bold/Roboto-Bold", bold);
+@include font-face("Roboto", "../fonts/roboto-medium/Roboto-Medium", 500);
+@include font-face("Roboto", "../fonts/roboto-thin/Roboto-Thin", 100);
+@include font-face("Alike", "../fonts/alike-regular/Alike-Regular");
