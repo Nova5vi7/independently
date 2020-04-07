@@ -38,7 +38,7 @@
       background-color: $main-blue;
       vertical-align: middle;
       transition: all 0.3s ease;
-
+      bottom: 1px;
       &::before,
       &::after {
         content: "";
