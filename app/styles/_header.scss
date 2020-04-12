@@ -1,10 +1,37 @@
 @import "_vars.scss";
 
+.navigation-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 320px;
+  background-color: $main-blue;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.5s ease;
+  &.active {
+    right: 0;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
 .site-header {
   position: fixed;
   width: 100%;
   padding: 2.928% 6.076%;
-  z-index: 100;
+  z-index: 10001;
 
   &__content {
     display: flex;
@@ -22,11 +49,33 @@
     transition: all 0.3s ease;
     border-radius: 3px;
     cursor: pointer;
+    // Убираем дефолтную обводку у кнопки при нажатии
+    outline: none;
 
+    &.active,
     &:hover {
       background-color: $main-blue;
       .nav-button__icon {
         background-color: #fff;
+      }
+    }
+
+    &.active {
+      background-color: #fff;
+      .nav-button__icon {
+        background-color: transparent;
+        &:after {
+          transform: rotate(-45deg);
+        }
+        &:before {
+          transform: rotate(405deg);
+        }
+
+        &:after,
+        &:before {
+          background: $main-blue;
+          top: 0;
+        }
       }
     }
 
@@ -47,6 +96,7 @@
         position: absolute;
         background-color: inherit;
         left: 0;
+        transition: transform 0.5s ease;
       }
       &::after {
         top: 7px;

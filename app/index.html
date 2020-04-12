@@ -31,16 +31,23 @@
       href="img/favicon/apple-touch-icon-114x114.png"
     />
 
-    <link rel="stylesheet" href="css/fonts.min.css" />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
   <body>
+    <div class="navigation-menu" id="navigation-menu">
+      <ul>
+        <li><a href="">text</a></li>
+        <li><a href="">text</a></li>
+        <li><a href="">text</a></li>
+        <li><a href="">text</a></li>
+      </ul>  
+    </div>
     <header class="site-header">
       <div class="site-header__content">
         <a href="#" class="site-header__logo"> </a>
 
-        <button class="nav-button">
+        <button class="nav-button" id="navigation-toggle-btn">
           <span class="nav-button__icon"></span>
         </button>
       </div>
@@ -210,27 +217,31 @@
           </div>
         </div>
       </div>
-      </div>
     </div>
-    <footer class="site-footer">
 
+    <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-md-5">
+            <div class="site-footer__info">
+              <h3 class="secondary-title">
+                <a href="#" class="site-footer__logo"></a> Afrianska
+              </h3>
 
-            
-              <div class="site-footer__info">
-                <h3 class="secondary-title"> <a href="#" class="site-footer__logo"></a> Afrianska</h3>
-
-                <ul class="site-footer__info-contacts">
-                  <li class="site-footer__contact"><i>A.</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                  <li class="site-footer__contact"><i>T.</i><a href="tel:+62-812-7313-4321">+62-812-7313-4321</a></li>
-                  <li class="site-footer__contact"><i>E.</i><a href="mailto:afrian@gmail.com">afrian@gmail.com</a></li>
-                </ul>
-
-              </div>  
-            
-
+              <ul class="site-footer__info-contacts">
+                <li class="site-footer__contact">
+                  <i>A.</i>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </li>
+                <li class="site-footer__contact">
+                  <i>T.</i><a href="tel:+62-812-7313-4321">+62-812-7313-4321</a>
+                </li>
+                <li class="site-footer__contact">
+                  <i>E.</i
+                  ><a href="mailto:afrian@gmail.com">afrian@gmail.com</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="col-md-3">
             <div class="site-footer__links">
@@ -239,12 +250,13 @@
                 <li class="site-footer__link"><a href="#">About</a></li>
                 <li class="site-footer__link"><a href="#">What We Do </a></li>
                 <li class="site-footer__link"><a href="#"> Project</a></li>
-                <li class="site-footer__link"><a href="#">How It Work With Us</a></li>
+                <li class="site-footer__link">
+                  <a href="#">How It Work With Us</a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="col-md-4">
-
             <div class="site-footer__links">
               <h4 class="site-footer__links-title">Follow US</h4>
               <ul class="site-footer__links-list">
@@ -256,12 +268,15 @@
             </div>
           </div>
           <div class="col-12">
-            <p class="site-footer__copyright">2019 © Afrianska. All rights reserved.</p>
+            <p class="site-footer__copyright">
+              2019 © Afrianska. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
-
-
     </footer>
+
+    <!-- Scripts here -->
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
