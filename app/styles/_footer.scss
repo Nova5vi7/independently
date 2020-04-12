@@ -1,0 +1,92 @@
+.feedback-section {
+  border-radius: 0px 200px 0px 0px;
+  background: #316099;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 6.66% 0;
+  position: relative;
+
+  .additional-title {
+    max-width: 380px;
+    margin-bottom: 32px;
+  }
+  .main-text {
+    max-width: 460px;
+  }
+  &__btn-wrap {
+    margin-top: 74px;
+  }
+  .main-btn {
+    padding: 0 74px;
+  }
+}
+
+.site-footer {
+  padding: 6.66% 0;
+  background-color: #316099;
+  &__logo {
+    width: 48px;
+    height: 32px;
+    background-image: url(../img/logo-footer.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 16px;
+  }
+  .secondary-title {
+    margin-bottom: 33px;
+  }
+  &__info-contacts {
+    max-width: 299px;
+    margin: 0;
+    padding: 0;
+  }
+  &__contact {
+    font: normal 16px/26px "Roboto";
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    list-style-type: none;
+    padding-left: 36px;
+    position: relative;
+    margin-bottom: 24px;
+    i {
+      position: absolute;
+      left: 0;
+      top: 0;
+      line-height: 26px;
+      display: inline-block;
+      font-style: normal;
+    }
+  }
+  &__links-title {
+    font: normal 500 20px/30px "Roboto";
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    margin: 0 0 32px;
+  }
+  &__links-list {
+    margin: 0;
+    padding: 0;
+  }
+  &__link {
+    list-style: none;
+    font: normal 16px/26px "Roboto";
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+    a {
+      color: #ffffff;
+    }
+  }
+  &__copyright {
+    font: normal 16px/26px "Roboto";
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    opacity: 0.4;
+    margin-top: 64px;
+  }
+}

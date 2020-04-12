@@ -1,4 +1,4 @@
-@import "_var.scss";
+@import "_vars.scss";
 
 .site-header {
   position: fixed;
@@ -62,5 +62,12 @@
     height: 48px;
     background-image: url(../img/logo.svg);
     display: inline-block;
+  }
+}
+
+.section-three {
+  .additional-title {
+    max-width: 223px;
+    max-height: 200px;
   }
 }

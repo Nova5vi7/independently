@@ -1,0 +1,44 @@
+.main-title {
+  font: normal 64px/74px "Alike";
+  color: $dark-blue;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.additional-title {
+  font: normal 500 36px/46px "Roboto";
+  letter-spacing: 0.05em;
+  color: $additional-blue;
+  margin: 0;
+}
+
+.main-text {
+  font: normal 16px/26px "Roboto";
+  letter-spacing: 0.05em;
+  color: $dark-blue;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.main-btn {
+  font: normal 16px/26px "Roboto";
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: $light-blue;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  border: none;
+  padding: 0 50px;
+  height: 56px;
+}
+
+.secondary-title {
+  font: normal 500 28px/46px "Roboto";
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.color-white {
+  color: #ffffff;
+}
