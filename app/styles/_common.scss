@@ -1,3 +1,7 @@
+* {
+  outline: none !important;
+}
+
 .main-title {
   font: normal 64px/74px "Alike";
   color: $dark-blue;
@@ -30,6 +34,12 @@
   border: none;
   padding: 0 50px;
   height: 56px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $dark-blue;
+    transition: all 0.6s ease;
+  }
 }
 
 .secondary-title {
