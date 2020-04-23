@@ -83,6 +83,8 @@ gulp.task("build", ["removedist", "imagemin", "scss", "scripts"], function() {
 
   var buildCss = gulp.src(["app/css/main.min.css"]).pipe(gulp.dest("dist/css"));
 
+var buildLibsCss = gulp.src(["app/css/libs.min.css"]).pipe(gulp.dest("dist/css"));
+
   var buildJs = gulp.src(["app/js/scripts.min.js"]).pipe(gulp.dest("dist/js"));
 
   var buildFonts = gulp.src(["app/fonts/**/*"]).pipe(gulp.dest("dist/fonts"));
